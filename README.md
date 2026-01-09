@@ -1,4 +1,4 @@
-Companion AI - Landing Page clone
+Companion AI https://companion.uprock.pro/  - Landing Page clone
 I built this website with React and complex scroll-based animations.
 
  Check out the live site: https://ieeetask-seven.vercel.app/
