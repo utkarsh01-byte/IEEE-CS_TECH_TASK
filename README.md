@@ -1,16 +1,37 @@
-# React + Vite
+Companion AI - Landing Page clone
+I built this website with React and complex scroll-based animations.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ Check out the live site: https://ieeetask-seven.vercel.app/
 
-Currently, two official plugins are available:
+What I used: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React: My core framework for building the UI.
 
-## React Compiler
+Framer Motion: This did all the heavy lifting for the scroll transformations and the "pop-in" navigation effects.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+CSS Modules: Used these to keep my styles scoped so I didn't have to worry about class names clashing across sections.
 
-## Expanding the ESLint configuration
+Vite: For a fast development environment.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Key Sections I Developed: 
+
+The Hero Section:
+The first thing you see is a layered image reveal. I used useTransform and clipPath to make different images "wipe" over each other as you scroll down. I also added some dynamic text that fades out just before the next section arrives.
+
+The Solution Section:
+It starts as a small card in the middle of the screen and expands to fill the entire width as you scroll.
+
+
+How it's organized:
+src/components: Where the logic for the Hero and Solution sections lives.
+
+src/videos: Local assets for the hand interaction and background vibes.
+
+App.jsx: The "brain" of the app that manages the global scroll progress and navbar visibility logic.
+
+Want to run it locally?
+Clone it: git clone https://github.com/utkarsh01-byte/IEEE-CS_TECH_TASK.git
+
+Installation : npm install
+
+Start the dev server: npm run dev
