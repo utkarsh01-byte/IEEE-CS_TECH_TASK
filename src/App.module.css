@@ -1,0 +1,26 @@
+.appWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.bgVideoContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bgVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainContent {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}

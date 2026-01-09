@@ -1,0 +1,47 @@
+.navbar {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: transparent;
+  pointer-events: auto;
+}
+
+.navItem {
+  background: white;
+  padding: 22px 27px;
+  border-radius: 5px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #311e03;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.navItem:hover {
+  transform: translateY(-2px);
+}
+
+.preOrderBtn {
+  background: #ffdb4d;
+  padding: 22px 27px;
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: #311e03;
+  cursor: pointer;
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .navItem {
+    display: none;
+  }
+}
