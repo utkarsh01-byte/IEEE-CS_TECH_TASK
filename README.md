@@ -21,6 +21,7 @@ The first thing you see is a layered image reveal. I used useTransform and clipP
 The Solution Section:
 It starts as a small card in the middle of the screen and expands to fill the entire width as you scroll.
 
+Also for better understanding , named all the components , files and classNames in a well defined meaningful names.
 
 How it's organized:
 src/components: Where the logic for the Hero and Solution sections lives.
