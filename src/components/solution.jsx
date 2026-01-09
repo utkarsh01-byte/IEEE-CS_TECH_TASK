@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import styles from "./solution.module.css";
+import handVideo from "../videos/hand.mp4";
 
 const SolutionSection = () => {
   const containerRef = useRef(null);
@@ -40,10 +41,7 @@ const SolutionSection = () => {
 
             <div className={styles.videoCenteringContainer}>
               <video autoPlay muted loop playsInline className={styles.video}>
-                <source
-                  src="https://video.srv18.com/v/mp4/932811464d4e8b1ac71c45fd96184b35/1920"
-                  type="video/mp4"
-                />
+                <source src={handVideo} type="video/mp4" />
               </video>
             </div>
 

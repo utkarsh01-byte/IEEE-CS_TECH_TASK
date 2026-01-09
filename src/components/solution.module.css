@@ -7,7 +7,7 @@
 .viewport {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,6 +36,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+   height: 30rem
 }
 
 .topSection {
@@ -87,11 +88,11 @@
 
 .companionSubText {
   font-size: clamp(0.9rem, 1.5vw, 1.1rem);
-  color: #311e03;
+  color: #402603;
   line-height: 1.5;
   text-align: left;
   max-width: 100%;
-  margin: 0;
+  font-family: sans-serif;
 }
 
 .headerArea {

@@ -4,7 +4,7 @@ import Navbar from "./components/navigation.jsx";
 import HeroSection from "./components/herosection.jsx";
 import SolutionSection from "./components/solution.jsx";
 import styles from "./App.module.css";
-
+import backGround from "./videos/background.mp4";
 function App() {
   const [showNav, setShowNav] = useState(false);
   const { scrollY } = useScroll();
@@ -23,10 +23,7 @@ function App() {
     <div className={styles.appWrapper}>
       <div className={styles.bgVideoContainer}>
         <video autoPlay muted loop playsInline className={styles.bgVideo}>
-          <source
-            src="https://video.srv18.com/v/mp4/39725c490839145c5f5d57486a709377/1920"
-            type="video/mp4"
-          />
+          <source src={backGround} type="video/mp4" />
         </video>
       </div>
 
